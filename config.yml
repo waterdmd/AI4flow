@@ -1,0 +1,50 @@
+# config.yml
+
+data_paths:
+  - "/scratch/kdahal3/Caravan-stat-dyna/camels"
+
+output_prefix: "test-run"
+
+n_steps_in: 365  # Number of input steps
+n_steps_out: 3   # Number of output steps
+
+epochs: 1        # Number of training epochs
+batch_size: 256   # Batch size for training
+learning_rate: 0.0001  # Initial learning rate
+
+# # Uncomment and add paths as needed
+# transfer_learning_paths:
+#   - "/scratch/kdahal3/Caravan-stat-dyna/camels"
+
+export_sequences: false
+export_model: true
+save_plots: true
+evaluation_folder: "evaluation_metrics"  # Folder to store evaluation metrics for each CSV
+
+optimizer: 'Adam'
+
+model_type: "TRANSFORMER"  # Options: "GRU", "LSTM", "TRANSFORMER", "CNN_RNN", "SEQ2SEQ" etc.
+
+loss_function: "nse_loss"  # Options: "nse_loss", "kge_loss", "weighted_mse_loss", "huber_loss", "quantile_loss", "expectile_loss", "mae_loss"
+
+# # Parameters for loss functions
+# loss_params:
+#   expectile: 0.15  # Used for expectile_loss
+
+metrics:
+  - 'kge_metric'
+  - 'nse_metric'
+
+test_data_folder: "test_data"
+export_test_data: True  # Set to False if you don't want to export test data
+
+model_params:
+  num_time_features: 5 #useful for transformers only
+  num_heads: 8
+  head_size: 16
+  ff_dim: 128
+  num_transformer_blocks: 6
+  mlp_units: [128]
+  mlp_dropout_rate: 0.3
+  hidden_dim: 128
+  time_feature_sizes: [2020, 12, 31, 7, 366]  # Adjust these values according to your data
