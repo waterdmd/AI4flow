@@ -1,3 +1,6 @@
+# downloaded from modified from: https://github.com/neuralhydrology/neuralhydrology/blob/master/neuralhydrology/evaluation/metrics.py
+# documentation: https://neuralhydrology.readthedocs.io/en/latest/api/neuralhydrology.evaluation.metrics.html
+
 import logging
 from typing import Dict, List, Tuple
 
