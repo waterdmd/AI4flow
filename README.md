@@ -10,3 +10,5 @@ AI4flow is a machine learning framework designed for hydrological forecasting. T
 ## Development Status
 
 We are actively developing AI4flow to enhance its hydrological forecasting capabilities. Currently, the Long Short-Term Memory (LSTM) models are fully operational and have demonstrated promising results. However, the implementation and evaluation of Transformer-based models and other architectures are still underway. We are working to integrate these models and assess their performance to provide more robust and accurate forecasting solutions.
+
+For more details, please contact [kdahal3@asu.edu].
