@@ -1,6 +1,6 @@
 # AI4flow
 
-AI4flow is a machine learning framework designed for hydrological forecasting. This project supports a research paper currently under review at the *Science of the Total Environment* journal.
+AI4flow is a machine learning framework designed for hydrological forecasting. This project supports a research paper currently under review at the *Journal of Hydrology*.
 
 ## Notes
 
